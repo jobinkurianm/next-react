@@ -1,0 +1,10 @@
+.main {
+  max-width: 940px;
+  margin: auto;
+  min-height: 100vh;
+  padding: 20px 0;
+  @include breakpoint(smallup) {
+    width: 100%;
+    padding: 2%;
+  }
+}

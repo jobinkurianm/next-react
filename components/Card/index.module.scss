@@ -1,0 +1,47 @@
+.Card {
+  border-radius: 5px;
+  background-color: $green;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  transition: background-color 1s;
+  border: 3px solid $green;
+  color: $white;
+  gap: 15px 0;
+  cursor: pointer;
+  @include breakpoint(desktop) {
+    margin: 0 2% 20px 0;
+    width: 32%;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  @include breakpoint(tablet) {
+    margin: 0 3% 3% 0;
+    width: 48.5%;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  @include breakpoint(mobile) {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+  .imageWrap {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  &:hover:not(.disabledItem),
+  &.activeItem {
+    border-color: $white;
+    background-color: $darkGrey;
+  }
+}
