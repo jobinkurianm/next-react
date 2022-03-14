@@ -9,7 +9,6 @@ const Section = (props: any) => {
     hasSubmitted,
     sectionID,
   } = props;
-  //console.log(props);
 
   return (
     <>

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
   "dependencies": {
     "@types/jest": "^27.4.1",
@@ -26,6 +27,7 @@
     "@types/react": "17.0.30",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
+    "prettier": "^2.5.1",
     "typescript": "4.4.4"
   }
 }

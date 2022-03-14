@@ -64,7 +64,6 @@ const Home: NextPage = (props: any) => {
   };
 
   const updateSelection = () => {
-    console.log(currentSelections);
     let updatedArr = [...response?.items];
     let newArr = updatedArr.map((element: ICardProps) => {
       const obj = { ...element };
